@@ -17,11 +17,12 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-cream/50 dark:bg-charcoal/50 pattern-african">
+    <section id="contact" className="section-padding pattern-grain bg-cream/50 dark:bg-charcoal/50">
       <div className="container-narrow">
         <FadeIn>
           <SectionHeader
             eyebrow="Get In Touch"
+            xhosaTitle="Qhagamshelana Nathi"
             title="Contact Us"
             description="Reach out to learn more about our programmes, partnership opportunities, or how you can support our mission."
           />

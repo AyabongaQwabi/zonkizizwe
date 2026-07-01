@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Anton, Montserrat } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { getNonProfitSchema } from "@/lib/schema";
@@ -67,6 +67,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#e86a17" },
+    { media: "(prefers-color-scheme: dark)", color: "#17100a" },
+  ],
 };
 
 export default function RootLayout({

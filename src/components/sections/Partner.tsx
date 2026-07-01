@@ -10,12 +10,13 @@ export function Partner() {
   return (
     <section
       id="partner"
-      className="section-padding bg-earth text-cream pattern-african"
+      className="section-padding bg-earth text-cream"
     >
       <div className="container-narrow text-center">
         <FadeIn>
           <SectionHeader
             eyebrow="Collaborate With Us"
+            xhosaTitle="Masisebenzisane"
             title="Become a Partner"
             description="Join Zonkizizwe in building stronger, more resilient communities. We welcome partnerships with organisations that share our commitment to ubuntu and rural empowerment."
             light

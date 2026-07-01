@@ -69,12 +69,13 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-/* Orange headline gradient fill — only use on dark/charcoal surfaces (AA safe) */
+/* Warm gold-to-orange headline fill — only use on dark/charcoal surfaces */
 .text-gradient-brand {
-  background: linear-gradient(180deg, #f6913f 0%, #e86a17 55%, #c45a12 100%);
+  background: linear-gradient(180deg, #ffd89b 0%, #f6a23f 45%, #e86a17 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.4));
 }
 
 /* Repeating triangular border strip in orange / green / charcoal.
