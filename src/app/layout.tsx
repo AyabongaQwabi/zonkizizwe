@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Anton, Montserrat } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { getNonProfitSchema } from "@/lib/schema";
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Empowering communities through traditional leadership, food security, and agricultural development across the Eastern Cape.",
     images: [
       {
-        url: "/images/hero.png",
+        url: "/images/hero-village.jpg",
         width: 1200,
         height: 630,
         alt: "Zonkizizwe community empowerment in the Eastern Cape",
@@ -61,12 +61,19 @@ export const metadata: Metadata = {
     title: `${SITE.name} – ${SITE.tagline}`,
     description:
       "Empowering Eastern Cape communities through traditional leadership and community development.",
-    images: ["/images/hero.png"],
+    images: ["/images/hero-village.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#e86a17" },
+    { media: "(prefers-color-scheme: dark)", color: "#17100a" },
+  ],
 };
 
 export default function RootLayout({

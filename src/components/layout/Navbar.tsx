@@ -41,22 +41,27 @@ export function Navbar() {
       >
         <a
           href="#hero"
-          className="flex cursor-pointer items-center gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          aria-label={`${SITE.name} — home`}
+          className="flex cursor-pointer items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
+          {/* Horizontal crest lockup for the navigation bar */}
           <Image
-            src="/images/logo.png"
-            alt={`${SITE.name} logo`}
-            width={48}
-            height={48}
-            className="h-10 w-10 rounded-full object-cover sm:h-12 sm:w-12"
+            src="/brand/logo-horizontal-t.png"
+            alt={`${SITE.fullName} logo`}
+            width={480}
+            height={206}
+            className="hidden h-11 w-auto sm:block"
             priority
           />
-          <div className="hidden sm:block">
-            <p className="font-heading text-lg uppercase leading-none text-cream">
-              {SITE.name}
-            </p>
-            <p className="text-xs text-cream/70">{SITE.npoNumber}</p>
-          </div>
+          {/* Bare crest for small screens */}
+          <Image
+            src="/brand/crest-t.png"
+            alt={`${SITE.name} crest`}
+            width={80}
+            height={113}
+            className="h-11 w-auto sm:hidden"
+            priority
+          />
         </a>
 
         <div className="hidden items-center gap-1 lg:flex">
@@ -64,7 +69,11 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="cursor-pointer rounded-full px-3 py-2 text-sm font-medium text-cream/90 transition-colors duration-200 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className={`cursor-pointer rounded-full px-3 py-2 text-sm font-semibold transition-colors duration-200 hover:bg-primary/15 hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                isScrolled
+                  ? "text-earth dark:text-cream"
+                  : "text-cream/90 hover:text-cream"
+              }`}
             >
               {link.label}
             </a>
@@ -78,7 +87,9 @@ export function Navbar() {
           </Button>
           <button
             type="button"
-            className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-cream transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:hidden"
+            className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-primary/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:hidden ${
+              isScrolled ? "text-earth dark:text-cream" : "text-cream"
+            }`}
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"

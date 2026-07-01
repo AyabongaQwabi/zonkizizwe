@@ -25,6 +25,7 @@ export function Gallery() {
         <FadeIn>
           <SectionHeader
             eyebrow="Our Work in Action"
+            xhosaTitle="Umsebenzi Wethu"
             title="Community Gallery"
             description="Moments from our soup kitchens, ploughing initiatives, community meetings, and development projects across the Eastern Cape."
           />

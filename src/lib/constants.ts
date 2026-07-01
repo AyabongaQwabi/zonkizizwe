@@ -17,6 +17,27 @@ export const SITE = {
   footerTagline: "Zonkizizwe – Amandla Oluntu Namasiko",
 } as const;
 
+/** Established isiXhosa lines taken from the organisation's own collateral. */
+export const TAGLINES = {
+  hero: "Sisonke Sakha Ikamva Elingcono",
+  heroEnglish: "Together we build a better future",
+  power: "Amandla Oluntu Namasiko",
+  powerEnglish: "The power of the people and tradition",
+  plough: "Silima Namhlanje, Sivune Ngomso",
+  ploughEnglish: "We plough today, we harvest tomorrow",
+  together: "Makulunge, Masisebenzisane, Masiphumelele",
+  togetherEnglish: "Let it be well, let us work together, let us succeed",
+} as const;
+
+export const FOUNDER = {
+  name: "Mr Bokwe",
+  role: "Founder & Traditional Leader",
+  image: "/images/founder-real.jpeg",
+  quoteXhosa: "Sisonke sakha ikamva elingcono.",
+  quote:
+    "I started Zonkizizwe because I could not look away. Our elders go hungry, our fields lie unploughed, and our young people leave. We plough the land, we feed the hungry, and we hold on to who we are. This is not charity — it is ubuntu. When one household stands, the whole village stands with it.",
+} as const;
+
 export const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#mission", label: "Mission" },
@@ -97,44 +118,49 @@ export const PARTNER_TYPES = [
 
 export const GALLERY_IMAGES = [
   {
-    src: "/images/community-1.png",
-    alt: "Community meeting with traditional leaders",
-    category: "Community meetings",
-  },
-  {
-    src: "/images/traditional-leaders.png",
-    alt: "Traditional leaders gathering",
+    src: "/images/elder-tradition.jpg",
+    alt: "A dignified elderly Xhosa woman in traditional attire",
     category: "Traditional leaders",
   },
   {
-    src: "/images/soup-kitchen.png",
-    alt: "Volunteers serving food at soup kitchen",
+    src: "/images/horseman.jpg",
+    alt: "A Basotho man in a traditional blanket on horseback before the mountains",
+    category: "Community life",
+  },
+  {
+    src: "/images/soup-pots.jpg",
+    alt: "Potjie pots cooking a community meal over an open fire",
     category: "Soup kitchens",
   },
   {
-    src: "/images/farming.png",
-    alt: "Agricultural farming activities",
+    src: "/images/farming-woman.jpg",
+    alt: "A woman tending crops by hand in a green field",
     category: "Farming activities",
   },
   {
-    src: "/images/community-2.png",
-    alt: "Community development project",
-    category: "Community development",
-  },
-  {
-    src: "/images/tractor.png",
-    alt: "Tractor ploughing fields for planting",
+    src: "/images/tractor-plough.jpg",
+    alt: "A farmer ploughing a field with a red tractor",
     category: "Farming activities",
   },
   {
-    src: "/images/gallery-1.jpeg",
-    alt: "Community members at local gathering",
-    category: "Community meetings",
+    src: "/images/potato-harvest.jpg",
+    alt: "A freshly harvested potato held above a ploughed field",
+    category: "Farming activities",
   },
   {
-    src: "/images/community-3.png",
-    alt: "Rural Eastern Cape community support",
-    category: "Community development",
+    src: "/images/maize-harvest.jpg",
+    alt: "Community members celebrating an abundant maize harvest",
+    category: "Farming activities",
+  },
+  {
+    src: "/images/soup-village.jpg",
+    alt: "Cooking pots over a fire in a rural Eastern Cape village at dusk",
+    category: "Soup kitchens",
+  },
+  {
+    src: "/images/village-homes.jpg",
+    alt: "Rondavel homesteads on a lush green hillside",
+    category: "Community life",
   },
 ] as const;
 

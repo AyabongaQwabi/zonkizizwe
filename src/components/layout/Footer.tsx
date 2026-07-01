@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
-import { NAV_LINKS, SITE } from "@/lib/constants";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { NAV_LINKS, SITE, TAGLINES } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
+import { TriangleDivider } from "@/components/ui/TriangleDivider";
 
 function FacebookIcon({ className }: { className?: string }) {
   return (
@@ -24,22 +25,48 @@ export function Footer() {
 
   return (
     <footer className="bg-charcoal text-cream">
+      <TriangleDivider className="text-primary" />
+
+      {/* Contact bar — quick-glance reach line */}
+      <div className="border-b border-cream/10 bg-earth/40">
+        <div className="container-narrow flex flex-col items-center justify-center gap-3 py-5 text-sm text-cream/85 sm:flex-row sm:gap-8">
+          <a
+            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            className="flex items-center gap-2 transition-colors hover:text-primary"
+          >
+            <Phone className="h-4 w-4 text-primary" />
+            {SITE.phone}
+          </a>
+          <a
+            href={`mailto:${SITE.email}`}
+            className="flex items-center gap-2 transition-colors hover:text-primary"
+          >
+            <Mail className="h-4 w-4 text-primary" />
+            {SITE.email}
+          </a>
+          <span className="flex items-center gap-2">
+            <MapPin className="h-4 w-4 text-primary" />
+            {SITE.address.full}
+          </span>
+        </div>
+      </div>
+
       <div className="section-padding container-narrow">
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/images/logo.png"
-                alt={`${SITE.name} logo`}
-                width={56}
-                height={56}
-                className="h-14 w-14 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-heading text-xl uppercase">{SITE.name}</p>
-                <p className="text-sm text-cream/70">{SITE.npoNumber}</p>
-              </div>
-            </div>
+            <Image
+              src="/brand/crest-t.png"
+              alt={`${SITE.name} crest`}
+              width={120}
+              height={170}
+              className="h-20 w-auto"
+            />
+            <p className="mt-4 font-heading text-lg uppercase leading-tight text-primary">
+              {TAGLINES.power}
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-cream/70">
+              {TAGLINES.powerEnglish}
+            </p>
             <p className="mt-4 text-sm leading-relaxed text-cream/75">
               {SITE.footerTagline}
             </p>
