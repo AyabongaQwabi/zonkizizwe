@@ -40,8 +40,8 @@ export function SoupKitchen() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative col-span-2 aspect-[16/10] overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/soup-kitchen.png"
-                  alt="Volunteers serving food at a community soup kitchen"
+                  src="/images/soup-pots.jpg"
+                  alt="Large cast-iron potjie pots cooking a community meal over an open fire above the village"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -49,8 +49,8 @@ export function SoupKitchen() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/gallery-1-fixed.png"
-                  alt="Elderly community member receiving a warm meal"
+                  src="/images/soup-village.jpg"
+                  alt="Three-legged pots cooking over a fire in a rural Eastern Cape yard at dusk"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -58,8 +58,8 @@ export function SoupKitchen() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/community-2.png"
-                  alt="Volunteers preparing food for distribution"
+                  src="/images/maize-harvest.jpg"
+                  alt="Community members celebrating a maize harvest"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 50vw, 25vw"

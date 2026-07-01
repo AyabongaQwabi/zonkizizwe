@@ -20,8 +20,8 @@ export function About() {
           <FadeIn direction="left">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl">
               <Image
-                src="/images/traditional-leaders.png"
-                alt="Traditional leaders and community members gathered together"
+                src="/images/horseman.jpg"
+                alt="A Basotho man in a traditional blanket riding on horseback before the mountains of the Eastern Cape"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

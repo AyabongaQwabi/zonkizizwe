@@ -118,44 +118,49 @@ export const PARTNER_TYPES = [
 
 export const GALLERY_IMAGES = [
   {
-    src: "/images/community-1.png",
-    alt: "Community meeting with traditional leaders",
-    category: "Community meetings",
-  },
-  {
-    src: "/images/traditional-leaders.png",
-    alt: "Traditional leaders gathering",
+    src: "/images/elder-tradition.jpg",
+    alt: "A dignified elderly Xhosa woman in traditional attire",
     category: "Traditional leaders",
   },
   {
-    src: "/images/soup-kitchen.png",
-    alt: "Volunteers serving food at soup kitchen",
+    src: "/images/horseman.jpg",
+    alt: "A Basotho man in a traditional blanket on horseback before the mountains",
+    category: "Community life",
+  },
+  {
+    src: "/images/soup-pots.jpg",
+    alt: "Potjie pots cooking a community meal over an open fire",
     category: "Soup kitchens",
   },
   {
-    src: "/images/farming.png",
-    alt: "Agricultural farming activities",
+    src: "/images/farming-woman.jpg",
+    alt: "A woman tending crops by hand in a green field",
     category: "Farming activities",
   },
   {
-    src: "/images/community-2.png",
-    alt: "Community development project",
-    category: "Community development",
-  },
-  {
-    src: "/images/tractor.png",
-    alt: "Tractor ploughing fields for planting",
+    src: "/images/tractor-plough.jpg",
+    alt: "A farmer ploughing a field with a red tractor",
     category: "Farming activities",
   },
   {
-    src: "/images/gallery-1-fixed.png",
-    alt: "Elderly community member receiving a warm meal",
+    src: "/images/potato-harvest.jpg",
+    alt: "A freshly harvested potato held above a ploughed field",
+    category: "Farming activities",
+  },
+  {
+    src: "/images/maize-harvest.jpg",
+    alt: "Community members celebrating an abundant maize harvest",
+    category: "Farming activities",
+  },
+  {
+    src: "/images/soup-village.jpg",
+    alt: "Cooking pots over a fire in a rural Eastern Cape village at dusk",
     category: "Soup kitchens",
   },
   {
-    src: "/images/community-3.png",
-    alt: "Rural Eastern Cape community support",
-    category: "Community development",
+    src: "/images/village-homes.jpg",
+    alt: "Rondavel homesteads on a lush green hillside",
+    category: "Community life",
   },
 ] as const;
 

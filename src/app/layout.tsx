@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Empowering communities through traditional leadership, food security, and agricultural development across the Eastern Cape.",
     images: [
       {
-        url: "/images/hero.png",
+        url: "/images/hero-village.jpg",
         width: 1200,
         height: 630,
         alt: "Zonkizizwe community empowerment in the Eastern Cape",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: `${SITE.name} – ${SITE.tagline}`,
     description:
       "Empowering Eastern Cape communities through traditional leadership and community development.",
-    images: ["/images/hero.png"],
+    images: ["/images/hero-village.jpg"],
   },
   robots: {
     index: true,

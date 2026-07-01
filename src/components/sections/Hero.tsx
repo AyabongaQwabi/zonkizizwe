@@ -14,8 +14,8 @@ export function Hero() {
       className="relative flex min-h-screen items-center overflow-hidden bg-charcoal"
     >
       <Image
-        src="/images/hero.png"
-        alt="Ploughed farmland and rondavel homesteads in the rural Eastern Cape at golden hour"
+        src="/images/hero-village.jpg"
+        alt="Traditional rondavel homesteads on a green hillside in the rural Eastern Cape at golden sunset"
         fill
         priority
         className="h-full w-full object-cover object-center"

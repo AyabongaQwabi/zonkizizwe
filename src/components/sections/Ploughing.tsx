@@ -15,8 +15,8 @@ export function Ploughing() {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/tractor.png"
-                  alt="Tractor ploughing fields in the Eastern Cape"
+                  src="/images/tractor-plough.jpg"
+                  alt="A farmer ploughing a field with a red tractor in the Eastern Cape"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
