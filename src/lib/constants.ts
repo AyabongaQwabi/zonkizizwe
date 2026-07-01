@@ -32,7 +32,7 @@ export const TAGLINES = {
 export const FOUNDER = {
   name: "Mr Bokwe",
   role: "Founder & Traditional Leader",
-  image: "/images/founder.png",
+  image: "/images/founder-real.jpeg",
   quoteXhosa: "Sisonke sakha ikamva elingcono.",
   quote:
     "I started Zonkizizwe because I could not look away. Our elders go hungry, our fields lie unploughed, and our young people leave. We plough the land, we feed the hungry, and we hold on to who we are. This is not charity — it is ubuntu. When one household stands, the whole village stands with it.",
@@ -148,7 +148,7 @@ export const GALLERY_IMAGES = [
     category: "Farming activities",
   },
   {
-    src: "/images/gallery-1.png",
+    src: "/images/gallery-1-fixed.png",
     alt: "Elderly community member receiving a warm meal",
     category: "Soup kitchens",
   },

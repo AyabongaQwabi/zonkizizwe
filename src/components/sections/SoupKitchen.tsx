@@ -49,7 +49,7 @@ export function SoupKitchen() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/gallery-1.png"
+                  src="/images/gallery-1-fixed.png"
                   alt="Elderly community member receiving a warm meal"
                   fill
                   className="object-cover"

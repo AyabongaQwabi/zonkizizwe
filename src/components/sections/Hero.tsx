@@ -18,20 +18,20 @@ export function Hero() {
         alt="Ploughed farmland and rondavel homesteads in the rural Eastern Cape at golden hour"
         fill
         priority
-        className="object-cover"
+        className="h-full w-full object-cover object-center"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-charcoal/30" />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-charcoal/40" />
 
-      {/* Crest watermark */}
-      <div className="pointer-events-none absolute -right-10 top-1/2 hidden -translate-y-1/2 opacity-90 lg:block">
+      {/* Crest watermark — feathered, fully in-bounds, subtle */}
+      <div className="pointer-events-none absolute right-4 top-1/2 hidden -translate-y-1/2 opacity-40 mix-blend-luminosity xl:right-16 lg:block">
         <Image
-          src="/brand/crest-t.png"
+          src="/brand/crest-soft.png"
           alt=""
-          width={520}
-          height={733}
-          className="h-[36rem] w-auto drop-shadow-2xl"
+          width={522}
+          height={737}
+          className="h-[32rem] w-auto"
           aria-hidden="true"
         />
       </div>
