@@ -1,0 +1,93 @@
+@import "tailwindcss" source("../../src");
+
+:root {
+  --brand-primary: #e86a17;
+  --brand-primary-dark: #c45a12;
+  --brand-earth: #3d2416;
+  --brand-forest: #365c2b;
+  --brand-cream: #f7f3ea;
+  --brand-charcoal: #111111;
+  --brand-muted: #6b7280;
+  --background: #f7f3ea;
+  --foreground: #3d2416;
+  --card: #ffffff;
+  --card-foreground: #3d2416;
+  --border: #e5ddd0;
+}
+
+.dark {
+  --background: #111111;
+  --foreground: #f7f3ea;
+  --card: #1a1410;
+  --card-foreground: #f7f3ea;
+  --border: #3d2416;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--brand-primary);
+  --color-primary-dark: var(--brand-primary-dark);
+  --color-earth: var(--brand-earth);
+  --color-forest: var(--brand-forest);
+  --color-cream: var(--brand-cream);
+  --color-charcoal: var(--brand-charcoal);
+  --color-muted: var(--brand-muted);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --font-heading: var(--font-anton);
+  --font-body: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* African-inspired geometric pattern */
+.pattern-african {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e86a17' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pattern-divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brand-primary) 20%,
+    var(--brand-forest) 50%,
+    var(--brand-primary) 80%,
+    transparent
+  );
+  height: 3px;
+  opacity: 0.6;
+}
+
+.section-padding {
+  @apply px-4 py-20 sm:px-6 lg:px-8 lg:py-28;
+}
+
+.container-narrow {
+  @apply mx-auto max-w-7xl;
+}
