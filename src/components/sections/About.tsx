@@ -1,14 +1,16 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { TAGLINES } from "@/lib/constants";
 
 export function About() {
   return (
-    <section id="about" className="section-padding pattern-african bg-background">
+    <section id="about" className="section-padding pattern-grain bg-background">
       <div className="container-narrow">
         <FadeIn>
           <SectionHeader
             eyebrow="About Us"
+            xhosaTitle={TAGLINES.power}
             title="Rooted in Ubuntu, Serving Our Communities"
             description="Zonkizizwe brings together traditional leadership and community development to uplift rural households across the Eastern Cape."
           />

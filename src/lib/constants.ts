@@ -17,6 +17,27 @@ export const SITE = {
   footerTagline: "Zonkizizwe – Amandla Oluntu Namasiko",
 } as const;
 
+/** Established isiXhosa lines taken from the organisation's own collateral. */
+export const TAGLINES = {
+  hero: "Sisonke Sakha Ikamva Elingcono",
+  heroEnglish: "Together we build a better future",
+  power: "Amandla Oluntu Namasiko",
+  powerEnglish: "The power of the people and tradition",
+  plough: "Silima Namhlanje, Sivune Ngomso",
+  ploughEnglish: "We plough today, we harvest tomorrow",
+  together: "Makulunge, Masisebenzisane, Masiphumelele",
+  togetherEnglish: "Let it be well, let us work together, let us succeed",
+} as const;
+
+export const FOUNDER = {
+  name: "Mr Bokwe",
+  role: "Founder & Traditional Leader",
+  image: "/images/founder.png",
+  quoteXhosa: "Sisonke sakha ikamva elingcono.",
+  quote:
+    "I started Zonkizizwe because I could not look away. Our elders go hungry, our fields lie unploughed, and our young people leave. We plough the land, we feed the hungry, and we hold on to who we are. This is not charity — it is ubuntu. When one household stands, the whole village stands with it.",
+} as const;
+
 export const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#mission", label: "Mission" },
@@ -127,9 +148,9 @@ export const GALLERY_IMAGES = [
     category: "Farming activities",
   },
   {
-    src: "/images/gallery-1.jpeg",
-    alt: "Community members at local gathering",
-    category: "Community meetings",
+    src: "/images/gallery-1.png",
+    alt: "Elderly community member receiving a warm meal",
+    category: "Soup kitchens",
   },
   {
     src: "/images/community-3.png",

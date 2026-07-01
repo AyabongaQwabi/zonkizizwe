@@ -1,14 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Building2,
-  CreditCard,
-  Lock,
-  RefreshCw,
-  Shield,
-  ShieldCheck,
-} from "lucide-react";
+import { CreditCard, RefreshCw } from "lucide-react";
 import {
   DONATION_TIERS,
   PAYMENT_METHODS,
@@ -18,6 +11,7 @@ import {
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Button } from "@/components/ui/Button";
+import { Seal } from "@/components/ui/Seal";
 
 export function Donation() {
   const [selectedAmount, setSelectedAmount] = useState<number | "custom">(250);
@@ -46,11 +40,12 @@ export function Donation() {
   };
 
   return (
-    <section id="donate" className="section-padding bg-background pattern-african">
+    <section id="donate" className="section-padding pattern-grain bg-background">
       <div className="container-narrow">
         <FadeIn>
           <SectionHeader
             eyebrow="Make a Difference"
+            xhosaTitle="Nikela Namhlanje"
             title="Support Our Mission"
             description="Your donation directly funds soup kitchens, field ploughing, and community development programmes across the Eastern Cape."
           />
@@ -216,48 +211,23 @@ export function Donation() {
             </div>
           </FadeIn>
 
-          {/* Trust badges */}
+          {/* Trust seals — stamped credibility marks */}
           <FadeIn delay={0.15}>
-            <div className="space-y-4">
-              {[
-                {
-                  icon: ShieldCheck,
-                  title: "Secure Donations",
-                  desc: "All payments processed through trusted South African gateways.",
-                },
-                {
-                  icon: Building2,
-                  title: "Registered NPO",
-                  desc: "311-529 NPO — fully registered non-profit organisation.",
-                },
-                {
-                  icon: Lock,
-                  title: "SSL Secured",
-                  desc: "Your personal and payment information is encrypted.",
-                },
-                {
-                  icon: Shield,
-                  title: "100% to Community",
-                  desc: "Donations fund soup kitchens, ploughing, and social support.",
-                },
-              ].map((badge) => (
-                <div
-                  key={badge.title}
-                  className="flex gap-4 rounded-2xl border border-border bg-card p-5 transition-colors duration-200 hover:border-primary/30"
-                >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                    <badge.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-earth dark:text-cream">
-                      {badge.title}
-                    </h4>
-                    <p className="mt-1 text-sm text-muted dark:text-cream/70">
-                      {badge.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-lg">
+              <h4 className="mb-6 text-center font-heading text-lg uppercase text-earth dark:text-cream">
+                Your Trust, Stamped
+              </h4>
+              <div className="grid grid-cols-2 gap-6 place-items-center">
+                <Seal top="Registered" center="311-529" bottom="NPO" color="orange" size="sm" />
+                <Seal top="Secure" center="100%" bottom="Donations" color="green" size="sm" />
+                <Seal top="SSL" center="256" bottom="Encrypted" color="green" size="sm" />
+                <Seal top="Straight to" center="Uluntu" bottom="Community" color="orange" size="sm" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-earth/75 dark:text-cream/70">
+                Every rand funds soup kitchens, field ploughing, and social
+                support. Payments are processed through trusted South African
+                gateways.
+              </p>
             </div>
           </FadeIn>
         </div>

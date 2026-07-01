@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { MapPin } from "lucide-react";
-import { PLOUGHING_AREAS, PLOUGHING_STATS } from "@/lib/constants";
+import { PLOUGHING_AREAS, PLOUGHING_STATS, TAGLINES } from "@/lib/constants";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Seal } from "@/components/ui/Seal";
 
 export function Ploughing() {
   return (
@@ -21,9 +22,15 @@ export function Ploughing() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 hidden rounded-2xl bg-primary px-6 py-4 shadow-xl sm:block">
-                <p className="font-heading text-3xl text-white">2026</p>
-                <p className="text-sm text-white/80">Ploughing Season</p>
+              <div className="absolute -bottom-6 -right-4 hidden sm:block">
+                <Seal
+                  top="Ukulima"
+                  center="2026"
+                  bottom="Season"
+                  color="orange"
+                  size="md"
+                  className="bg-cream shadow-2xl dark:bg-charcoal"
+                />
               </div>
             </div>
           </FadeIn>
@@ -32,10 +39,21 @@ export function Ploughing() {
             <FadeIn>
               <SectionHeader
                 eyebrow="2026 Initiative"
-                title="Ukulima Emasimini 2026"
+                xhosaTitle="Ukulima Emasimini"
+                title="Ploughing the Fields, 2026"
                 description="In 2026, Zonkizizwe will assist households throughout Lady Frere, Queenstown, and the Chris Hani District by ploughing fields in preparation for planting maize, potatoes, cabbage, and other crops."
                 align="left"
+                brushColor="green"
               />
+            </FadeIn>
+
+            <FadeIn delay={0.05}>
+              <p className="mb-8 font-heading text-xl uppercase tracking-wide text-forest dark:text-primary">
+                {TAGLINES.plough}
+                <span className="mt-1 block text-sm font-normal normal-case tracking-normal text-earth/70 dark:text-cream/60">
+                  {TAGLINES.ploughEnglish}
+                </span>
+              </p>
             </FadeIn>
 
             <FadeIn delay={0.1}>

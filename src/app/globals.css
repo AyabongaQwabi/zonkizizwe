@@ -5,6 +5,7 @@
   --brand-primary-dark: #c45a12;
   --brand-earth: #3d2416;
   --brand-forest: #365c2b;
+  --brand-forest-dark: #274420;
   --brand-cream: #f7f3ea;
   --brand-charcoal: #111111;
   --brand-muted: #6b7280;
@@ -16,11 +17,12 @@
 }
 
 .dark {
-  --background: #111111;
+  --background: #17100a;
   --foreground: #f7f3ea;
-  --card: #1a1410;
+  --card: #221812;
   --card-foreground: #f7f3ea;
   --border: #3d2416;
+  --brand-muted: #b9ab98;
 }
 
 @theme inline {
@@ -30,6 +32,7 @@
   --color-primary-dark: var(--brand-primary-dark);
   --color-earth: var(--brand-earth);
   --color-forest: var(--brand-forest);
+  --color-forest-dark: var(--brand-forest-dark);
   --color-cream: var(--brand-cream);
   --color-charcoal: var(--brand-charcoal);
   --color-muted: var(--brand-muted);
@@ -66,22 +69,31 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-/* African-inspired geometric pattern */
-.pattern-african {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e86a17' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+/* Orange headline gradient fill — only use on dark/charcoal surfaces (AA safe) */
+.text-gradient-brand {
+  background: linear-gradient(180deg, #f6913f 0%, #e86a17 55%, #c45a12 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.pattern-divider {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--brand-primary) 20%,
-    var(--brand-forest) 50%,
-    var(--brand-primary) 80%,
-    transparent
+/* Repeating triangular border strip in orange / green / charcoal.
+   This is the organisation's own footer divider motif. */
+.pattern-triangles {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16' viewBox='0 0 48 16'%3E%3Cpolygon points='0,16 8,0 16,16' fill='%23e86a17'/%3E%3Cpolygon points='16,16 24,0 32,16' fill='%23365c2b'/%3E%3Cpolygon points='32,16 40,0 48,16' fill='%23111111'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 16px;
+}
+
+/* Subtle earthy grain used sparingly behind light sections */
+.pattern-grain {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(61, 36, 22, 0.06) 1px,
+    transparent 0
   );
-  height: 3px;
-  opacity: 0.6;
+  background-size: 22px 22px;
 }
 
 .section-padding {

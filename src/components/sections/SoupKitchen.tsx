@@ -7,7 +7,7 @@ export function SoupKitchen() {
   return (
     <section
       id="soup-kitchen"
-      className="section-padding bg-forest text-cream pattern-african"
+      className="section-padding bg-forest text-cream"
     >
       <div className="container-narrow">
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -15,6 +15,7 @@ export function SoupKitchen() {
             <FadeIn>
               <SectionHeader
                 eyebrow="Soup Kitchen Initiative"
+                xhosaTitle="Ukondla Uluntu"
                 title="Feeding Hope. Restoring Dignity."
                 description="Zonkizizwe operates and supports soup kitchen programmes for poor, elderly, homeless, and vulnerable community members across the Eastern Cape."
                 align="left"
@@ -48,8 +49,8 @@ export function SoupKitchen() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/gallery-1.jpeg"
-                  alt="Community members receiving meals"
+                  src="/images/gallery-1.png"
+                  alt="Elderly community member receiving a warm meal"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 50vw, 25vw"
